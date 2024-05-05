@@ -1,14 +1,16 @@
 .page {
 	font-family: var(--font-family, 'IBM Plex mono', sans-serif);
 	background-color: var(--background-color, #000028);
-	background-image: var(--background-image,url(../images/cover-image-dark.png)	);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
+	background-image: var(
+		--background-image,
+		url(../images/cover-image-dark.png)
+	);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
 	line-height: 130%;
 	font-size: 18px;
-
 }
 
 .header {
@@ -174,7 +176,7 @@
 }
 
 .link:hover {
-  border-bottom: 1px solid currentColor;
+	border-bottom: 1px solid currentColor;
 }
 
 .link:focus {
@@ -213,8 +215,9 @@
 }
 
 @media (width >=768px) {
+	
 	.page_title {
-		font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem); 
+		font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
 	}
 
 	.page_title-text {
