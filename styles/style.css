@@ -3,6 +3,7 @@
 	background-color: var(--background-color, #000028);
 	line-height: 130%;
 	font-size: 18px;
+		background-attachment: fixed; /* test */
 }
 
 .header {
@@ -67,8 +68,8 @@
 	content: 'REC';
 	color: var(--decor-color, #ff0070);
 	display: inline-flex;
-	-webkit-margin-end: 10px;
-	margin-inline-end: 10px;
+	-webkit-margin-end: clamp(10px, 0.029rem + 2.56vw, 20px);
+	margin-inline-end: clamp(10px, 0.029rem + 2.56vw, 20px);
 	font-size: 18px;
 	visibility: var(--decor-rec-visibility, visible);
 }
@@ -77,8 +78,8 @@
 	content: '';
 	display: inline-flex;
 	align-self: flex-end;
-	width: 10px;
-	height: 10px;
+	width: clamp(10px, 0.029rem + 2.56vw, 20px);
+	height: clamp(10px, 0.029rem + 2.56vw, 20px);
 	border-radius: 50%;
 	box-shadow: 0 0 4px 2px var(--decor-color, #ff0070);
 	background-color: var(--decor-color, #ff0070);
@@ -88,8 +89,8 @@
 .decorated-zone::before {
 	content: '';
 	position: absolute;
-	top: 10px;
-	right: 10px;
+	top: clamp(10px, 0.029rem + 2.56vw, 20px);
+	right: clamp(10px, 0.029rem + 2.56vw, 20px);
 	width: 25px;
 	height: 25px;
 	-webkit-border-end: 1px solid var(--decor-color, #ff0070);
@@ -101,8 +102,8 @@
 .decorated-zone::after {
 	content: '';
 	position: absolute;
-	bottom: 10px;
-	left: 10px;
+	bottom: clamp(10px, 0.029rem + 2.56vw, 20px);
+	left: clamp(10px, 0.029rem + 2.56vw, 20px);
 	width: 25px;
 	height: 25px;
 	-webkit-border-start: 1px solid var(--decor-color, #ff0070);
@@ -114,7 +115,7 @@
 .page_title {
 	color: var(--page-title-color, #db00ff);
 	font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-	text-shadow: 4px 4px 0 var(--shadow-color, #ff0070);
+	text-shadow: 4px 4px 0 var(--block-color, #ff0070);
 	line-height: 82.5%;
 }
 
@@ -129,20 +130,24 @@
 .content {
 	display: flex;
 	flex-direction: column;
-	gap: clamp(3.125rem, 1.3359rem + 7.6336vw, 5rem);
+	gap: clamp(50px, 1.3359rem + 7.6336vw, 80px);
 	padding: clamp(40px, 1.7777rem + 3.0817vw, 60px)
 		clamp(10px, 0.029rem + 2.56vw, 20px);
 }
 
-.block,
+.block {
+display: grid;
+	gap: clamp(10px, 0.029rem + 2.56vw, 20px);
+ }
+
 .article {
 	display: grid;
-	gap: 20px;
+	gap: 10px;
 }
 
 .columns {
 	display: grid;
-	gap: 10px;
+	gap: 20px;
 }
 
 .block-title {
@@ -165,7 +170,7 @@
 }
 
 .link {
-	text-shadow: 2px 2px 0 var(--shadow-color, #ff0070);
+	text-shadow: 2px 2px 0 var(--block-color, #ff0070);
 	text-decoration: none;
 }
 
@@ -212,6 +217,8 @@
 @media (width >=768px) {
 	.page-title {
 		font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+
+
 	}
 
 	.page_title-text {
