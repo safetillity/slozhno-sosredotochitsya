@@ -67,8 +67,7 @@
 	content: 'REC';
 	color: var(--decor-color, #ff0070);
 	display: inline-flex;
-	-webkit-margin-end: clamp(10px, 0.029rem + 2.56vw, 20px);
-	margin-inline-end: clamp(10px, 0.029rem + 2.56vw, 20px);
+	margin-inline-end: 10px;
 	font-size: 18px;
 	visibility: var(--decor-rec-visibility, visible);
 	text-transform: uppercase;
@@ -214,11 +213,15 @@
 	height: 100vh;
 	padding: clamp(10px, 0.029rem + 2.56vw, 20px);
 	min-height: 668px;
+
 }
 
 @media (width >=768px) {
 	.page_title {
 		font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+	}
+
+	.title-margin{
 		margin-left: -20px;
 	}
 
