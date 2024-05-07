@@ -213,7 +213,6 @@
 	height: 100vh;
 	padding: clamp(10px, 0.029rem + 2.56vw, 20px);
 	min-height: 668px;
-
 }
 
 @media (width >=768px) {
@@ -221,7 +220,7 @@
 		font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
 	}
 
-	.title-margin{
+	.title-margin {
 		margin-left: -20px;
 	}
 
