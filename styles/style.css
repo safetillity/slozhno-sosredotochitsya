@@ -1,5 +1,5 @@
 .page {
-	font-family: var(--font-family, 'IBM Plex mono', sans-serif);
+	font-family: var(--font-family, 'IBM Plex mono', monospace);
 	background-color: var(--background-color, #000028);
 	background-image: var(
 		--background-image,
@@ -131,7 +131,7 @@
 	display: flex;
 	flex-direction: column;
 	gap: clamp(50px, 1.3359rem + 7.6336vw, 80px);
-	padding: clamp(40px, 1.7777rem + 3.0817vw, 60px)
+	padding: clamp(2.5rem, 1.3073rem + 5.0891vw, 3.75rem)
 		clamp(10px, 0.029rem + 2.56vw, 20px);
 }
 
@@ -195,6 +195,7 @@
 .gallery {
 	display: grid;
 	gap: clamp(10px, 0.029rem + 2.56vw, 20px);
+	contain: inline-size;
 }
 
 .image {
@@ -212,12 +213,14 @@
 	place-items: center;
 	height: 100vh;
 	padding: clamp(10px, 0.029rem + 2.56vw, 20px);
+	height: 100vh;
+	min-height: 668px;
 }
 
 @media (width >=768px) {
-	
 	.page_title {
 		font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+		margin-left: -20px;
 	}
 
 	.page_title-text {
@@ -278,8 +281,8 @@
 	}
 
 	.fullscreen .segment {
-		display: flex;
-		flex-direction: row;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
 	}
 
 	.fullscreen .article {

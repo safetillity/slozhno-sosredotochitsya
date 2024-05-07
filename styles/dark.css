@@ -9,7 +9,7 @@
 	--decor-color: #ff0070;
 	--hover-color: #ff007040;
 
-	--font-family: 'IBM Plex mono', sans-serif;
+	--font-family: 'IBM Plex mono', monospace;
 	--background-image: url('../images/cover-image-dark.png');
 
 	--decor-rec-visibility: visible;

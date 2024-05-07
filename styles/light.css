@@ -10,7 +10,7 @@
 	--hover-color: #35343040;
 
 	--background-image: url('../images/cover-image-light.png');
-	--font-family: 'IBM Plex mono', sans-serif;
+	--font-family: 'IBM Plex mono', monospace;
 
 	--decor-rec-visibility: hidden;
 }
@@ -19,14 +19,16 @@
 	:root {
 		--shadow-color: #ff0070;
 		--block-color: #ff8dcb;
+		--block-title-color: #353430;
 		--title-text-color: #353430;
 		--page-title-color: #ffc2e6;
 		--main-text-color: #353430;
 		--background-color: #fff1f7;
 		--decor-color: #353430;
+		--hover-color: #35343040;
 
 		--background-image: url('../images/cover-image-light.png');
-		--font-family: 'IBM Plex mono', sans-serif;
+		--font-family: 'IBM Plex mono', monospace;
 
 		--decor-rec-visibility: hidden;
 	}
